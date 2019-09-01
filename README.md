@@ -1,4 +1,4 @@
-#linqingove.github.io
+<center>#linqingove.github.io</center>
 ***
 ##欢迎访问我的GitHub
 ***
