@@ -1,5 +1,5 @@
-# <center>  linqingove.github.io </center>
+#linqingove.github.io
 ***
-## 欢迎访问我的GitHub
+##欢迎访问我的GitHub
 ***
 ### 这是我的第一个页面
