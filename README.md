@@ -1,9 +1,4 @@
-# linqingove.github.io
-----------
 ## 欢迎访问我的GitHub
-----------
-#### 请访问 [我的主页](http://linqingove.github.io/web "index"). 
-
 <table border="0">
   <tr>
     <td width="75%">
@@ -14,8 +9,9 @@
       <p><b>地址：××市××区××路××号××大学，××楼，邮编×××</b></p>
     </td>
     <td width="25%">
-      <img src="/head.jpg" width="100%">      % 插入证件照代码
+      <img src="config/head.jpg" width="100%">      % 插入证件照代码
     </td>
   </tr>
 </table>
 
+#### 请访问 [我的主页](http://linqingove.github.io/web "index"). 
