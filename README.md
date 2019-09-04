@@ -14,4 +14,4 @@
     </td>
   </tr>
 </table>
-#### 请访问 [my index](http://linqingove.github.io/web "index"). 
+#### 请访问 [主页](http://linqingove.github.io/web "index"). 
