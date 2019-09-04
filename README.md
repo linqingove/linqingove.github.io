@@ -1,4 +1,4 @@
-## 欢迎访问我的GitHub
+## Welcome to my GitHub
 <table border="0">
   <tr>
     <td width="75%">
@@ -13,5 +13,4 @@
     </td>
   </tr>
 </table>
-
 #### 请访问 [我的主页](http://linqingove.github.io/web "index"). 
