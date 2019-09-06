@@ -1,7 +1,7 @@
 <!--
  * @Author: zhangjingguo
  * @Date: 2019-09-04 13:24:18
- * @LastEditTime: 2019-09-06 15:53:25
+ * @LastEditTime: 2019-09-06 15:54:24
  * @Description: file content
  -->
 
@@ -14,12 +14,11 @@
       <p><b>山东淄博张店区</b></p>
       <p><b>邮箱: 779670171@qq.com</b></p>
       <p><b>地址: Huaguang road, zhangdian district, zibo city</b></p>
-      <p style="text-align:center">
+      <p>
 
-* 主页链接 [yourszhang](https://linqingove.github.io/web)
+主页链接 [yourszhang](https://linqingove.github.io/web)
 
-* github链接 [yourszhang](https://github.com/linqingove/)
-
+github链接 [yourszhang](https://github.com/linqingove/)
       </p>
     </td>
     <td width="25%">
