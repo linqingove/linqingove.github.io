@@ -1,7 +1,7 @@
 <!--
  * @Author: zhangjingguo
  * @Date: 2019-09-06 14:21:47
- * @LastEditTime: 2019-09-06 14:47:49
+ * @LastEditTime: 2019-09-06 16:07:36
  * @Description: file content
  -->
 #   git远程仓库的创建与使用
@@ -29,6 +29,11 @@
 ### git commit -m "第一次提交"
 ### git remote add origin 用户名@ IP地址 :/home/用户名/XXX.git  //说明：此处git@xxx里边的git就是git用户
 ### git push origin master  //推送
+#### git push错误 remote: error: refusing to update checked out branch: refs/heads/master 解决方式
+### 这是由于git默认拒绝了push操作，需要进行设置，修改.git/config文件后面添加如下代码：
+    `[receive]
+     denyCurrentBranch = ignore`
+### 重新git push即可
 
 ##  远程服务端:
 ### 拿出版本库的代码 git 恢复文件到初始状态的命令：
