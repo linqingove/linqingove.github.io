@@ -1,11 +1,11 @@
 <!--
  * @Author: zhangjingguo
  * @Date: 2019-09-04 13:24:18
- * @LastEditTime: 2019-09-06 15:40:32
+ * @LastEditTime: 2019-09-06 15:47:39
  * @Description: file content
  -->
 
-<table border="0">
+<table border="0" style="margin-bottom: 20px">
   <tr>
     <h1>Welcome to my GitHub</h1>
     <td width="75%">
@@ -20,7 +20,6 @@
     </td>
   </tr>
 </table>
-<br>
 
 * 主页链接 [yourszhang](https://linqingove.github.io/web)
 
