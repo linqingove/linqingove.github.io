@@ -31,8 +31,8 @@
 ### git push origin master  //推送
 #### git push错误 remote: error: refusing to update checked out branch: refs/heads/master 解决方式
 ### 这是由于git默认拒绝了push操作，需要进行设置，修改.git/config文件后面添加如下代码：
-    `[receive]
-     denyCurrentBranch = ignore`
+    ` [receive]
+      denyCurrentBranch = ignore `
 ### 重新git push即可
 
 ##  远程服务端:
