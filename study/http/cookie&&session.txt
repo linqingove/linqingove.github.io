@@ -1,0 +1,56 @@
+一.深入理解session和cookie的区别
+
+   区别：session存储在服务器端，cookie存储在客户端，session相对于安全，cookie不安全，session和cookie都可以设置过期时间，都可以跨页面传值，都可以实现会话功能。Session开启后，有一个sessionid存储在cookie里，如果客户端禁止了cookie，sessionid以url地址栏的方式进行传输。
+
+二.禁用cookie 后 seesion 还能用吗?
+
+cookie是保存在本地的，而seesion是保存在服务器上的。所以两者没有直接的关系，禁用cookie后seesion依然可以用。
+
+Cookie的介绍
+
+Cookie的概念：
+
+cookie是一种存储在客户端浏览器里用来跟踪和识别用户上网信息的机制。简单的来说，cookie就是web服务器暂时存储在用户硬盘上的一个文本文件，并随后被web浏览器读取。当用户再次访问该web网站的时候，网站通过读取cookie文件记录这位访客的特定信息（如上次访问的位置、花费的时间、用户名和密码等）从而做出迅速响应。
+
+Cookie 的功能：
+
+记录访客的某些信息（例如用户名、三天免登陆），在多页面 之间传递变量，将所有查看的Internet页存储在cookie 的临时文件夹里，可以提高 浏览的速度。
+
+
+Cookie的使用步骤：
+
+1）设置cookie：setcookie(‘cookie的名字’,’cookie的值’,过期时间)
+
+2）读取cookie：$_COOKIE[‘cookie的名字’]
+
+3）删除cookie：
+
+setcookie(“要删除的cookie的名字”,””,time()-1)
+
+浏览器手动删除
+
+Cookie的分类：分为会话cookie和持久cookie，会话cookie就是没有给cookie设置过期时间，当关闭浏览器或者关闭电脑cookie就会自动消失；持久cookie就是给cookie设置了过期时间，只要过期时间没到，关闭浏览器和关闭电脑cookie都不会消失，只有过期时间到了才会消失。
+
+二.Session的介绍
+
+
+Session的定义：
+
+session是一种存储服务器端用来跟踪和识别用户信息的会话机制。当启动一个session会话时，会生成一个随机且唯一的session_id，也就是session文件名，此时，session_id存储在本地的cookie里。当关闭页面时此id会自动注销，重新登录此页面，会再次生成一个随机的id。
+
+
+使用步骤：
+
+     1）开启session：session_start(); 此函数前面不能有任何输出
+
+     2）给session赋值：$_SESSION[‘名’]=值ssssss
+
+     3）使用session：$变量名=$_SESSION[‘名’]
+
+ 4）删除session：
+
+   删除单个session：unset($_SESSION[‘名’])
+
+   删除多个session：$_SESSON=array();
+
+   结束当前所有session：session_destroy()

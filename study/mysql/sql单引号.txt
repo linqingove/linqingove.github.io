@@ -1,0 +1,35 @@
+2019.8---
+sql中的then,when
+SELECT 
+id,
+(CASE type
+ 
+WHEN 1 THEN '女'
+ 
+WHEN 2 THEN '男'
+ 
+ELSE 'null' END)type
+ 
+FROM jm_user_level_change_log;
+
+2019.8---
+
+查询避免Unknown column ‘xxx’ in ‘where clause’
+但凡写过sql语句的人估计都曾经碰到过类似于Unknown column ‘xxx’ in ‘where clause’的问题。 单从字面理解，我们很容易得出
+
+列名不存在的结论，但是，很多时候起始并不是由于列名出错造成的。而是由于拼凑sql语句时对字符类型数据没有用引号引起来造成的。
+
+
+
+例如：一个hql语句：final String hql = "from ActiveCert ac where ac.issuerName="+issueName"；
+
+设置issueName值为ysy，则错误如下：
+
+Unknown column
+‘ysy′ in ‘where clause’
+
+sql中如果issueName是整型的倒不会出现什么错误，而如果sql中字符串类型必须要包含在引号内。
+
+所以修改hql为：final String hql = "from ActiveCert ac where ac.issuerName='"+issueName+"'";
+
+则错误消失。。
