@@ -1,0 +1,17 @@
+搭建的ss手机端总是提示ssl handshake timed out
+使用命令：systemctl status firewalld.service
+查看防火墙状态
+执行后可以看到绿色字样标注的“active（running）”，说明防火墙是开启状态
+使用命令：systemctl stop firewalld.service    
+
+关闭运行的防火墙
+关闭后，使用命令systemctl status firewalld.service
+
+查看防火墙状态
+
+可以看到，disavtive（dead）的字样，说明防火墙已经关闭
+
+前面的方法，一旦重启操作系统，防火墙就自动开启了，该怎么设置才能永久关闭防火墙呢？
+
+输入命令：systemctl disable firewalld.service，禁止防火墙服务器
+命令成功执行，返回消息
