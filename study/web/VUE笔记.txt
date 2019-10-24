@@ -1,0 +1,15 @@
+.trim v-model 忽略空白提交
+
+Vue中可用的判断对象是否为空的方法
+
+两个方法可用
+
+1.
+
+JSON.stringify(evtValue)=='{}'
+2.
+
+Object.keys(xxx).length==0
+
+
+VUE阻止冒泡方法后加.stop
