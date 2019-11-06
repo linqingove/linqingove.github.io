@@ -1,0 +1,11 @@
+在phpMyAdmin里可以正常显示，但我读出来emoji都显示成问题号了，google和github找了好久，差点被那些用图片替换显示emoji的库带进沟里了，最后问题解决很简单，在配置数据库连接时，设置字符串为utf8mb4就行了（我原来默认设为utf8所以不行）。
+'db' => [
+    'class' => 'CDbConnection',
+    'connectionString' => 'mysql:host=localhost;dbname=name',
+    'emulatePrepare' => true,
+    'enableParamLogging' => true,
+    'enableProfiling'=>true,
+    'username' => 'root',
+    'password' => '',
+    'charset' => 'utf8mb4',
+],
