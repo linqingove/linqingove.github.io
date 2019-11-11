@@ -13,3 +13,6 @@ Object.keys(xxx).length==0
 
 
 VUE阻止冒泡方法后加.stop
+
+VUE跨域请求问题
+{emulateJSON:true}可以解决
