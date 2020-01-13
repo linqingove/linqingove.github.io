@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background: black;
+    }
+
+    /* 渲染的样式需要写在过渡的类名之前 */
+    .draw-enter-active,
+    .draw-leave-active {
+      transition: all 1s ease;
+    }
+    .draw-enter,
+    .draw-leave-to {
+      height: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <button @click="show = !show">点我</button>
+    <transition name="draw">
+      <!--这里的name 和 css 类名第一个字段要一样-->
+      <div class="box" v-show="show"></div>
+    </transition>
+  </div>
+</body>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script type="text/javascript">
+  new Vue({
+    el: '#app',
+    data: {
+      show: false
+    },
+  });
+</script>
+
+</html>
